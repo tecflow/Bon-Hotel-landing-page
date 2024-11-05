@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+h1{
+    font-family: "Ubuntu", sans-serif;
+}
+
+.container{
+    max-width: 1340px;
+    margin: 0 auto; /*დარჩენილ ადგილს 1320px-ის მერე ვანაწილებთ გვერდებზე თანაბრად*/
+    padding: 0 10px;
+}
+
+.header-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 0px;
+}
+
+.navigation{
+    display: flex;
+    gap: 40px;
+}
+
+.nav-link{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24;
+    line-height: 28px;
+    color: #957554;
+    text-decoration: none;
+
+}
+
+.nav-link:hover{
+    color: black;
+}
+
+.first-section{
+    background-image: url(assets/main.png);
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 80px;
+}
+
+.first-section-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%; /* ეს საშუალებას გვაძლევს რომ მთლიანი სიმაღლე აიღოს დივმა მისი მშობელი კონტეინერის, ამის გარეშე ის ტავში იჭედება*/
+    gap: 50px;
+}
+
+.main-title{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 92px;
+    color:  white;
+}
+
+.description, .button, .footer-nav-links{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+}
+
+.button{
+    text-decoration: none;
+    background-color: #dfaa5b;
+    padding: 25px 133px;
+    border-radius: 10px;
+
+    text-decoration: none;
+    background-color: #dfaa5b;
+    padding: 25px 133px;
+    border-radius: 10px;
+
+    padding: 24px 52px 24px 56px;
+}
+
+.secondary-title{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 52px;
+    color: #957554;
+    margin-bottom: 47px;
+}
+
+.room-cards{
+    width: 630px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+
+    position: relative;
+}
+
+.room-cards > img{
+    height: 100%;
+    width: 100%;
+    margin: 0px ;
+}
+
+.cards-content{
+    position: absolute;
+    left: 0%;
+    bottom: 57px;
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+    align-items: center;
+    width: 100%;
+}
+
+.card-title{
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 46px;
+    color: #fff; 
+}
+
+.button.button-small{
+    padding: 24px 52px 24px 56px;
+}
+
+.second-section{
+    max-width: 1320px;
+    margin: 0px auto;
+    margin-bottom: 55px;
+}
+
+.room-gallery{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px;
+}
+
+.contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 122px;
+}
+
+.third-section a{
+    text-decoration: none;
+    background-color: #dfaa5b;
+    padding: 25px 133px;
+    border-radius: 10px;
+}
+
+.third-section div h2{
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 52px;
+    color: #957554;
+    margin-bottom: 47px;
+}
+
+footer{
+    background-color: #111;
+    padding: 51px 0 159px;
+}
+
+.footer-content{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-content nav{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.footer-nav-links{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+    text-decoration: none;
+}
+
+.footer-nav-links:hover{
+    color: #dfaa5b;
+}
+
+.footer-text{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+}
+
+.footer-text a{
+    color: white;
+}
+
+
+.footer-text p:hover{
+    color: #dfaa5b;
+}
+
+.footer-text a{
+    display: block;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+.footer-content img{
+    width: 154px;
+    height: 126px;
+    object-fit: cover;
+}
+
+.news-card{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    grid-template-rows: 500px;
+    margin-bottom: 50px;
+}
+
+.news-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.news-card-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: baseline;
+    gap: 44px;
+}
+
+.news-card-content h3{
+    color: #957554;
+}
+
+.news-card-content p{
+    color: black;
+}
+
+.news-card:nth-child(2n) img{
+    order: 1;
+}
+
+.news-card:nth-child(2n) .news-card-content{
+    align-items: end;
+}
+
+.news-card:nth-child(2n) .news-card-content p{
+    text-align: right;
+}
+
+.news-card:last-child{
+    margin-bottom: 107px;
+}
+
+.gallery-grid{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 500px);
+    gap: 30px;
+    margin-bottom: 100px;
+}
+
+.gallery-grid img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: all 0.3s;
+}
+
+.gallery-grid img:first-child{
+    grid-area: 1/1/2/4;
+}
+
+.gallery-grid img:nth-child(2){
+    grid-area: 1/4/2/6;
+}
+
+.gallery-grid img:nth-child(3){
+    grid-area: 2/1/3/3;
+}
+
+.gallery-grid img:nth-child(4){
+    grid-area: 2/3/3/6;
+}
+
+.gallery-grid img:hover{
+    transform: scale(1.5);
+}
